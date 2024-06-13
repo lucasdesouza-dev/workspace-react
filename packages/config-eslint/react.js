@@ -37,6 +37,17 @@ module.exports = {
   // add rules configurations here
   rules: {
     "import/no-default-export": "off",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": [
+      "error",
+      {
+        ignoreTypeValueShadow: true,
+      },
+      {
+        ignoreFunctionTypeParameterNameValueShadow: true,
+      },
+    ],
+    "@typescript-eslint/consistent-type-imports": "error",
   },
   overrides: [
     {
