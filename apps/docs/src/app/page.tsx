@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Card, Button } from "@repo/ui/src";
+import { DocsSidebarNav } from "../components/sidebar-nav";
+import { docsConfig } from "../config/docs";
 
 function Gradient({
   conic,
@@ -142,11 +144,11 @@ export default function Page(): JSX.Element {
         <Button text="success" variant="success" />
         <Button shortcut="texto" text="shortcut" />
         <Button loading text="Default" variant="primary" />
-        <Button
+        {/* <Button
           disabledTooltip="testando"
           text="disabledTooltip"
           variant="primary"
-        />
+        /> */}
       </div>
     </main>
   );
