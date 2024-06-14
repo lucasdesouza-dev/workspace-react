@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Card } from "@repo/ui/src";
+import { Card, Button } from "@repo/ui/src";
 
 function Gradient({
   conic,
@@ -130,6 +130,23 @@ export default function Page(): JSX.Element {
             {description}
           </Card>
         ))}
+      </div>
+      <h1 className="text-center ">Componentes exemplo</h1>
+      <div className="grid mb-32 gap-2 text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
+        <Button text="Default" />
+        <Button text="danger" variant="danger" />
+        <Button text="danger-outline" variant="danger-outline" />
+        <Button text="outline" variant="outline" />
+        <Button text="primary" variant="primary" />
+        <Button text="secondary" variant="secondary" />
+        <Button text="success" variant="success" />
+        <Button shortcut="texto" text="shortcut" />
+        <Button loading text="Default" variant="primary" />
+        <Button
+          disabledTooltip="testando"
+          text="disabledTooltip"
+          variant="primary"
+        />
       </div>
     </main>
   );

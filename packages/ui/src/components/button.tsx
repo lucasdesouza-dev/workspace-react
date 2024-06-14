@@ -1,6 +1,6 @@
-import { cn } from "../../utils";
+import { cn } from "../../../utils";
 import { ReactNode } from "react";
-import { LoadingSpinner } from "./icons";
+import { LoadingSpinner } from "../icons";
 import { Tooltip } from "./tooltip";
 
 export interface ButtonProps

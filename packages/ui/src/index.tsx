@@ -1,6 +1,3 @@
 import "./styles.css";
-export * from "./badge";
-export * from "./card";
-export * from "./button";
+export * from "./components/index";
 export * from "./icons";
-export * from "./tooltip";

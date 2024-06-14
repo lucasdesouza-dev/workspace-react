@@ -7,7 +7,7 @@ import Link from "next/link";
 import { ReactNode, useState } from "react";
 import { Badge } from "./badge";
 import { ButtonProps } from "./button";
-import { nFormatter, timeAgo } from "../../utils/src/functions";
+import { nFormatter, timeAgo } from "../../../utils/src/functions";
 
 export function TooltipProvider({ children }: { children: ReactNode }) {
   return (
